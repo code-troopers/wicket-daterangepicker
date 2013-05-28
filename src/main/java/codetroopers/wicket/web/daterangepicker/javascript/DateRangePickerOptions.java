@@ -31,7 +31,6 @@ public class DateRangePickerOptions implements Serializable {
     
     public DateRangePickerOptions(final String format) {
         this.locale = new LocaleOptions();
-        this.ranges = new LinkedHashMap<>();
         this.format = format;
     }
 
@@ -116,7 +115,10 @@ public class DateRangePickerOptions implements Serializable {
     }
     
     public DateRangePickerOptions addRange(String name, Date startDate, Date endDate){
-        getRanges().put(name, new Date[]{startDate, endDate});
+        if (this.ranges == null){
+            this.ranges = new LinkedHashMap<>();
+        }
+        this.ranges.put(name, new Date[]{startDate, endDate});
         return this;
     }
 

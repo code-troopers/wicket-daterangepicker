@@ -16,7 +16,7 @@ Add the following Maven dependency
     <dependency>
         <groupId>com.code-troopers</groupId>
         <artifactId>wicket-daterangepicker</artifactId>
-        <version>0.1</version>
+        <version>0.2</version>
     </dependency>
 
 To use it in your Wicket application, you will need to attach the `DateRangePickerBehavior` to a `TextField` component.

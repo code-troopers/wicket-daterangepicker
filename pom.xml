@@ -8,7 +8,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.code-troopers</groupId>
     <artifactId>wicket-daterangepicker</artifactId>
-    <version>0.2-SNAPSHOT</version>
+    <version>0.2</version>
     <name>wicket-daterangepicker</name>
     <description>DateRangePicker plugin for Wicket</description>
     <packaging>jar</packaging>
